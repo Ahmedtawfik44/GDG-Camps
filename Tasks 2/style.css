@@ -1,0 +1,259 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* start login / */
+.login{
+   margin: 30px auto;
+   padding: 20px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   width: 400px;
+}
+
+.login h1{
+   text-transform: capitalize;
+   font-size: 25px;
+   margin: 0;
+}
+
+.login p{
+    color: #777;
+    margin: 10px 0 0 0 ;
+    font-size: 14px;
+}
+
+.login p a{
+    color: #4285F4;
+}
+
+form .form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+form .form label{
+   margin-bottom: 8px;
+   margin-top: 20px;
+}
+
+form .form i{
+    position: absolute;
+    top: 58px;
+    left: 10px;
+    color: #777;
+}
+
+form .form input{
+    padding: 10px 10px 10px 35px;
+    outline: none;
+    border: 1px solid #777;
+    border-radius: 8px;
+}
+
+form .form input::placeholder{
+    color: #777;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 15px;
+}
+
+.info a{
+    text-decoration: none;
+    color: #4285F4;
+}
+
+.login button{
+    display: block;
+    position: relative;
+}
+
+.login button:first-of-type{
+   margin: auto;
+   width: 100%;
+   padding-block: 8px;
+   margin-bottom: 55px;
+   background-color:#4285F4 ;
+   color: white;
+   outline: none;
+   border: none;
+   font-size: 18px;
+   text-transform: capitalize;
+   border-radius: 8px;
+   position: relative;
+}
+
+.login button:first-of-type::after,
+.sign-up .input::before{
+    content:"";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+    bottom: -28px;
+    left: 0;
+  }
+
+.login button:first-of-type::before,
+.sign-up .input::after{
+    content:"Or Login With";
+    position: absolute;
+   bottom: -33px;
+   transform: translateX(-50%);
+   left: 50%;
+   color: #777;
+   font-size: 13px;
+   z-index: 100;
+   background-color:white;
+  padding-inline: 10px;
+  }
+
+.login button:last-of-type{
+    
+    width: 100%;
+    padding-block: 8px;
+    color: #777;
+    background-color: white;
+    border: 1px solid #777;
+    border-radius: 8px;
+}
+
+.login button:last-of-type i,
+.sign-up .button-sign i{
+    color: #4285F4;
+    margin-right: 5px;
+}
+/* end login  */
+
+/* start sign up  */
+.sign-up {
+  padding: 100px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+  
+}
+ .sign-up h1{
+    text-transform: capitalize;
+    font-size: 25px;
+    margin: 0;
+ }
+
+ .sign-up p{
+    color: #777;
+    font-size: 14px;
+ }
+
+ .sign-up .box {
+    display: flex;
+    justify-content: space-between;
+}
+
+  .sign-up .box form{
+    position: relative;
+ } 
+
+ .sign-up .box form i{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+
+ }
+
+ .sign-up .box form input{
+    padding: 10px 70px 10px 35px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+ }
+
+ .sign-up .box form select{
+    padding: 10px 170px 10px 35px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    color: #777;
+ }
+
+ .sign-up .input{
+    width: 100%;
+    padding-block: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    color: white;
+    background-color:#4285F4 ;
+    font-size: 18px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    position: relative;
+ }
+
+ .sign-up .button-sign{
+    width: 100%;
+    padding-block: 8px;
+    color: #777;
+    background-color: white;
+    border: 1px solid #777;
+    border-radius: 8px;
+ }
+/* end sign up  */
+
+/* start cart  */
+.cart{
+    padding-top: 100px;
+    padding-left: 170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   gap: 30px;
+}
+
+.cart .box{
+    box-shadow: 
+    0 15px 30px rgba(0, 0, 0, 0.18), 
+    0 5px 10px rgba(0, 0, 0, 0.3);  
+    margin: auto;
+    padding: 10px;
+}
+.cart img{
+    width: 215px;
+    height: 170px;
+}
+
+.cart h3{
+margin: 30px 0 0 0;
+}
+
+.cart .price{
+    display: flex ;
+        gap: 10px
+}
+
+.cart .price p:first-child{
+text-decoration: line-through;
+}
+
+.cart .price p:nth-last-child(2){
+color: red;
+}
+.cart .price p:last-child{
+margin-top: 12px;
+}
+
+.cart input{
+    display: flex;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+    width: 210px;
+    background-color: #19c8fa;
+    border:none;
+    color: white;
+}
+
+/* end cart  */
