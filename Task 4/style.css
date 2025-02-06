@@ -1,0 +1,46 @@
+.quate{
+   margin:auto;
+   text-align: center;
+   padding-top: 150px;
+}
+
+.quate .content{
+    padding: 20px;
+    box-shadow: 
+    0 15px 30px rgba(0, 0, 0, 0.18), 
+    0 5px 10px rgba(0, 0, 0, 0.3);  
+    width:400px;
+    margin: auto;
+   text-align: center;
+   border-radius: 15px 15px 100px 15px;
+}
+
+.quate .content .txt{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.quate .content .txt h2{
+    text-transform: capitalize;
+    color: #777;
+    font-size: 30px;
+}
+
+.quate .content p{
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 1.5;
+    color: #5967b5;
+}
+
+.quate button{
+    margin-top: 25px;
+    padding: 10px 40px;
+    color: white;
+    background-color: #5b5656;
+    font-size: 22px;
+    border: none;
+    border-radius: 8px;
+}
